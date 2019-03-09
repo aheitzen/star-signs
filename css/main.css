@@ -1,8 +1,9 @@
 /*GENERAL CSS*/
 
 html, body {
-	background: rgb(31,36,41);
-    background: linear-gradient(152deg, rgba(31,36,41,1) 0%, rgba(10,11,13,1) 100%);
+	background: #1F2429;
+	/*background: rgb(31,36,41);
+    background: linear-gradient(152deg, rgba(31,36,41,1) 0%, rgba(10,11,13,1) 100%);*/
 	height: 100%;
 	margin: 0;
 	position: fixed;
@@ -21,6 +22,7 @@ html, body {
 	height: 100%;
     position: absolute;
    	width: 100%;
+   	
 }
 
 /*ORBIT STYLES*/
@@ -32,24 +34,33 @@ html, body {
 	padding: 0;
 	position: relative;
 	z-index: 0;
-
-height: 100%; 
+	 
     /*width: 61em;*/
     /* height: 50%; */
     margin: 0;
     padding: 0;
-    position: relative;
-    z-index: 0;
+  
 }
 
-#sm-circle-animation {
-	height: 100%;
-	/*height: 20%;*/
-	width: 100%;
+/*.back-to-main-link {
 	position: relative;
-	z-index: 2;
+	z-index: 10;
 	
+	    height: 100%;
 
+	
+}*/
+
+a {
+	/*height: 100%;
+	width: 100%;*/
+	height: 20%;
+	color: pink;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 10;
 }
-    
+   
 

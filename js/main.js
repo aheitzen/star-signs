@@ -1,4 +1,4 @@
-particlesJS.load('particles-js', 'assets/particles.json', function() {
+particlesJS.load('particles-js', 'assets/particlesjs-config.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
@@ -7,7 +7,7 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'assets/background-one.json' // the path to the animation json
+  path: 'assets/ARIES.json' // the path to the animation json
 });
 
 lottie.loadAnimation({
