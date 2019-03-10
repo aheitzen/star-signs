@@ -7,15 +7,8 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'assets/ARIES.json' // the path to the animation json
+  path: 'assets/aries-season.json' // the path to the animation json
 });
 
-lottie.loadAnimation({
-  container: document.getElementById('sm-circle-animation'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'assets/sm.json' // the path to the animation json
-});
-
-// anim.play();
+new WOW().init();
+        

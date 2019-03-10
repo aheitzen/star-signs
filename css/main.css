@@ -1,3 +1,6 @@
+/*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Berkshire Swash', cursive;*/
+
 /*GENERAL CSS*/
 
 html, body {
@@ -34,33 +37,78 @@ html, body {
 	padding: 0;
 	position: relative;
 	z-index: 0;
-	 
-    /*width: 61em;*/
-    /* height: 50%; */
     margin: 0;
     padding: 0;
   
 }
 
-/*.back-to-main-link {
-	position: relative;
-	z-index: 10;
-	
-	    height: 100%;
+.link {
+	    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5em;
+    margin-left: 1.5em;
 
 	
-}*/
+}
 
 a {
-	/*height: 100%;
-	width: 100%;*/
-	height: 20%;
-	color: pink;
+	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	z-index: 10;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+
+}
+
+.aries-text {
+	position: absolute;
+	z-index: 10;
+	 width: 100%;
+    height: 100%;
+}
+
+#aries-title {
+	position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Berkshire Swash', cursive;
+    color: #EFE4CA;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 100px;
+    margin-top: 1em;
+    letter-spacing: 5px;
+}
+
+.aries-subtitle {
+	font-family: 'Lato', sans-serif;
+	position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+ 	color: #EFE4CA;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 19px;
+    margin-top: 1em;
+    letter-spacing: 5px;
 }
    
 
