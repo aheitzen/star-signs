@@ -56,7 +56,7 @@ html, body {
 }
 
 a {
-	color: white;
+	color: #EFE4CA;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -69,10 +69,14 @@ a {
 }
 
 .aries-text {
-	position: absolute;
-	z-index: 10;
-	 width: 100%;
+	    position: absolute;
+    z-index: 10;
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #aries-title {
@@ -81,34 +85,41 @@ a {
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 100%;
-    height: 100%;
     font-family: 'Berkshire Swash', cursive;
     color: #EFE4CA;
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 100px;
-    margin-top: 1em;
+    margin-top: 3.2em;
     letter-spacing: 5px;
+    margin-bottom: 0;
 }
 
-.aries-subtitle {
+#aries-subtitle {
 	font-family: 'Lato', sans-serif;
 	position: relative;
     z-index: 10;
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 100%;
-    height: 100%;
  	color: #EFE4CA;
     display: flex;
     justify-content: center;
     align-content: center;
     font-size: 19px;
-    margin-top: 1em;
     letter-spacing: 5px;
+    margin-top: 0;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	color: #EFE4CA;
+	display: inline-block;
+	font-weight: 100;
+	font-size: 12px;
+	line-height: 1;	
+	margin-top: 2px;
 }
    
 
