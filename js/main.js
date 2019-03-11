@@ -20,6 +20,7 @@ load('./partials/cancer.html', document.querySelector('#cancer-page'));
 load('./partials/libra.html', document.querySelector('#libra-page'));
 load('./partials/pisces.html', document.querySelector('#pisces-page'));
 load('./partials/sag.html', document.querySelector('#sag-page'));
+load('./partials/aqua.html', document.querySelector('#aqua-page'));
 
 
 
@@ -66,6 +67,15 @@ lottie.loadAnimation({
   loop: true,
   autoplay: true,
   path: 'assets/sag.json' // the path to the animation json
+});
+
+// AQUA ANIMATION
+lottie.loadAnimation({
+  container: document.getElementById('aqua-animation'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/aqua.json' // the path to the animation json
 });
 
 new WOW().init();
