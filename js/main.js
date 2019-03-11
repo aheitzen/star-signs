@@ -18,9 +18,12 @@ function load(url, element)
 load('./partials/aries.html', document.querySelector('#aries-page'));
 load('./partials/cancer.html', document.querySelector('#cancer-page'));
 load('./partials/libra.html', document.querySelector('#libra-page'));
+load('./partials/pisces.html', document.querySelector('#pisces-page'));
+load('./partials/sag.html', document.querySelector('#sag-page'));
 
 
 
+//ARIES ANIMATION
 lottie.loadAnimation({
   container: document.getElementById('circle-animation'), // the dom element that will contain the animation
   renderer: 'svg',
@@ -29,6 +32,7 @@ lottie.loadAnimation({
   path: 'assets/aries-season.json' // the path to the animation json
 });
 
+// CANCER ANIMATION
 lottie.loadAnimation({
   container: document.getElementById('cancer-animation'), // the dom element that will contain the animation
   renderer: 'svg',
@@ -37,12 +41,31 @@ lottie.loadAnimation({
   path: 'assets/cancer.json' // the path to the animation json
 });
 
+// LIBRA ANIMATION
 lottie.loadAnimation({
   container: document.getElementById('libra-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
   autoplay: true,
   path: 'assets/libra-animation.json' // the path to the animation json
+});
+
+// PISCES ANIMATION
+lottie.loadAnimation({
+  container: document.getElementById('pisces-animation'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/pisces-animation.json' // the path to the animation json
+});
+
+// SAG ANIMATION
+lottie.loadAnimation({
+  container: document.getElementById('sag-animation'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/sag.json' // the path to the animation json
 });
 
 new WOW().init();
