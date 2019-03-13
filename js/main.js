@@ -22,6 +22,7 @@ load('./partials/pisces.html', document.querySelector('#pisces-page'));
 load('./partials/sag.html', document.querySelector('#sag-page'));
 load('./partials/aqua.html', document.querySelector('#aqua-page'));
 load('./partials/virgo.html', document.querySelector('#virgo-page'));
+load('./partials/leo.html', document.querySelector('#leo-page'));
 
 
 
@@ -86,6 +87,15 @@ lottie.loadAnimation({
   loop: true,
   autoplay: true,
   path: 'assets/virgo.json' // the path to the animation json
+});
+
+// LEO ANIMATION
+lottie.loadAnimation({
+  container: document.getElementById('leo-animation'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/leo.json' // the path to the animation json
 });
 
 new WOW().init();
