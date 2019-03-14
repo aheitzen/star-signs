@@ -24,6 +24,7 @@ load('./partials/aqua.html', document.querySelector('#aqua-page'));
 load('./partials/virgo.html', document.querySelector('#virgo-page'));
 load('./partials/leo.html', document.querySelector('#leo-page'));
 load('./partials/gemini.html', document.querySelector('#gemini-page'));
+load('./partials/taurus.html', document.querySelector('#taurus-page'));
 
 
 
@@ -106,6 +107,15 @@ lottie.loadAnimation({
   loop: true,
   autoplay: true,
   path: 'assets/gemini.json' // the path to the animation json
+});
+
+// TAURUS ANIMATION
+lottie.loadAnimation({
+  container: document.getElementById('taurus-animation'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/taurus.json' // the path to the animation json
 });
 
 
