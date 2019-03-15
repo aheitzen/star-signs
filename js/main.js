@@ -25,6 +25,7 @@ load('./partials/virgo.html', document.querySelector('#virgo-page'));
 load('./partials/leo.html', document.querySelector('#leo-page'));
 load('./partials/gemini.html', document.querySelector('#gemini-page'));
 load('./partials/taurus.html', document.querySelector('#taurus-page'));
+load('./partials/cap.html', document.querySelector('#cap-page'));
 
 // var wow = new WOW();
 // $('.main-container').on('afterChange', function(event, slick, currentSlide){
@@ -156,6 +157,15 @@ var taurus = lottie.loadAnimation({
   path: 'assets/taurus.json' // the path to the animation json
 });
 
+// CAP ANIMATION
+var cap = lottie.loadAnimation({
+  container: document.getElementById('cap-animation'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: false,
+  path: 'assets/capricorn.json' // the path to the animation json
+});
+
 
 $('.main-container').on('afterChange', function(event, slick, currentSlide){
     // wow = new WOW().init();
@@ -190,6 +200,9 @@ $('.main-container').on('afterChange', function(event, slick, currentSlide){
     } else if (currentSlide == 9) {
       // TAURUS ANIMATION
       taurus.play();
+    } else if (currentSlide = 10) {
+      // CAP ANIMAITON
+      cap.play();
     }
 
  })
@@ -227,9 +240,13 @@ $('.main-container').on('beforeChange', function(event, slick, currentSlide, nex
     } else if (currentSlide == 9) {
       // TAURUS ANIMATION
       taurus.stop();
+    } else if (currentSlide == 10) {
+      // CAP ANIMATION
+      cap.stop();
     }
 })
 
+// capricorn.json
 
 $('.main-container').on('init', function(event, slick){
     //ARIES ANIMATION
