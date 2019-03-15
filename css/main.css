@@ -136,8 +136,189 @@ p {
 /*SLIDER STYLES*/
 
 
+li {
+    margin-left: 1.2em;
+}
+
 button.slick-next.slick-arrow {
-    position: absolute;
-    top: 50px;
-    left: 100px;
+    background: transparent;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+    position: fixed;
+    top: calc(50% - 25px);
+    right: 20px;
+    /* left: 10px; */
+    float: right;
+}
+
+
+
+
+
+button.slick-next.slick-arrow:before {
+    /*content: "";*/
+}
+
+#text {
+    display: none;
+}
+
+button#slick-slide-control01, button#slick-slide-control02, button#slick-slide-control03, button#slick-slide-control04, button#slick-slide-control05, button#slick-slide-control06, button#slick-slide-control07, button#slick-slide-control08, button#slick-slide-control09, button#slick-slide-control00  {
+    visibility: hidden;
+}
+
+/*ul.slick-dots {
+    display: inline-flex;
+    font-size: 3em;
+    color: #EFE4CA;
+    width: 100%;
+    margin: 0 auto;
+        display: flex;
+    justify-content: center;
+    margin-top: -1em;
+    margin-left: 1em;
+}
+*/
+
+button.slick-prev.slick-arrow {
+    background: transparent;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+    position: fixed;
+    top: calc(50% - 25px);
+    left: 10px;
+}
+
+button.slick-next.slick-arrow {
+    background: transparent;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: #EFE4CA;
+    border: solid 1.4px #EFE4CA;
+
+}
+
+button:focus {
+    outline: none;
+    border: #EFE4CA solid 1.4px;
+}
+
+button.slick-next.slick-arrow:hover {
+    cursor: pointer;
+}
+
+
+button.slick-next.slick-arrow {
+    background: transparent;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+    position: fixed;
+    left: calc(97% - 20px);
+    /* left: 10px; */
+    /*float: right;*/
+}
+
+
+
+
+/*ABOUT PAGE*/
+
+.center-about-page {
+    margin-right: 15em;
+    margin-left: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about-h1 {
+    font-family: 'Berkshire Swash', cursive; 
+    color: #EFE4CA; 
+    text-align: center;
+    font-size: 3.3em;
+    letter-spacing: 2px;
+}
+
+.alexa {
+   font-family: 'Berkshire Swash', cursive; 
+    color: #EFE4CA; 
+    text-align: center;
+    font-size: 1.5em; 
+    width: 100%;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+.about-atr-p {
+   font-family: 'Lato', sans-serif;
+   font-weight: 500; 
+   text-align: center;
+   width: 100%;
+   letter-spacing: 2px;
+   margin-bottom: 0;
+    font-size: 16px;
+}
+
+.h2-about {
+    font-family: 'Lato', sans-serif;
+   font-weight: 500; 
+   text-align: center;
+   width: 100%;
+   letter-spacing: 2px;
+   margin-bottom: 0;
+    font-size: 16px;
+    color: #EFE4CA; 
+
+}
+
+.h3-about {
+     font-family: 'Lato', sans-serif;
+   font-weight: 500; 
+   text-align: center;
+   width: 100%;
+   letter-spacing: 2px;
+   margin-bottom: 0;
+    font-size: 16px;
+    color: #EFE4CA; 
+
+}
+
+.third-center {
+    align-items: center;
+    display: flex;
+        margin-top: 3em;
+        margin-bottom: 3em;
+}
+
+.ul-header {
+    font-family: 'Berkshire Swash', cursive; 
+   /*font-weight: 500; */
+   text-align: center;
+   width: 100%;
+   letter-spacing: 2px;
+   margin-bottom: 0;
+    font-size: 16px;
+    color: #EFE4CA; 
+    margin-bottom: 1em;
+}
+
+.li-about {
+       font-family: 'Lato', sans-serif;
+   width: 100%;
+   letter-spacing: 2px;
+   margin-bottom: 0;
+    font-size: 16px;
+    color: #EFE4CA; 
+    font-weight: 100;
+    margin-top: 10px;
+
 }

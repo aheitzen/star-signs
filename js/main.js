@@ -26,7 +26,7 @@ load('./partials/leo.html', document.querySelector('#leo-page'));
 load('./partials/gemini.html', document.querySelector('#gemini-page'));
 load('./partials/taurus.html', document.querySelector('#taurus-page'));
 
-var wow = new WOW();
+// var wow = new WOW();
 // $('.main-container').on('afterChange', function(event, slick, currentSlide){
 //     if (currentSlide == 1) {
 //       // CANCER ANIMATION
@@ -159,7 +159,7 @@ var taurus = lottie.loadAnimation({
 
 $('.main-container').on('afterChange', function(event, slick, currentSlide){
     // wow = new WOW().init();
-    wow.start();
+    // wow.start();
     if (currentSlide == 0) {
       // ARIES ANIMATION
       aries.play();
@@ -234,10 +234,12 @@ $('.main-container').on('beforeChange', function(event, slick, currentSlide, nex
 $('.main-container').on('init', function(event, slick){
     //ARIES ANIMATION
     aries.play();
-    wow.init();
+    // wow.init();
  })
 
-$('.main-container').slick();
+$('.main-container').slick({
+   // dots: true
+});
 
 
 
