@@ -94,65 +94,65 @@ var libra = lottie.loadAnimation({
 });
 
 // PISCES ANIMATION
-lottie.loadAnimation({
+var pisces = lottie.loadAnimation({
   container: document.getElementById('pisces-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/pisces-animation.json' // the path to the animation json
 });
 
 // SAG ANIMATION
-lottie.loadAnimation({
+var sag = lottie.loadAnimation({
   container: document.getElementById('sag-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/sag.json' // the path to the animation json
 });
 
 // AQUA ANIMATION
-lottie.loadAnimation({
+var aqua = lottie.loadAnimation({
   container: document.getElementById('aqua-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/aqua.json' // the path to the animation json
 });
 
 // VIRGO ANIMATION
-lottie.loadAnimation({
+var virgo = lottie.loadAnimation({
   container: document.getElementById('virgo-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/virgo.json' // the path to the animation json
 });
 
 // LEO ANIMATION
-lottie.loadAnimation({
+var leo = lottie.loadAnimation({
   container: document.getElementById('leo-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/leo.json' // the path to the animation json
 });
 
 // GEMINI ANIMATION
-lottie.loadAnimation({
+var gemini = lottie.loadAnimation({
   container: document.getElementById('gemini-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/gemini.json' // the path to the animation json
 });
 
 // TAURUS ANIMATION
-lottie.loadAnimation({
+var taurus = lottie.loadAnimation({
   container: document.getElementById('taurus-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/taurus.json' // the path to the animation json
 });
 
@@ -160,12 +160,36 @@ lottie.loadAnimation({
 $('.main-container').on('afterChange', function(event, slick, currentSlide){
     // wow = new WOW().init();
     wow.start();
-    if (currentSlide == 1) {
-      // CANCER ANIMATION
+    if (currentSlide == 0) {
+      // ARIES ANIMATION
+      aries.play();
+    }  else if (currentSlide == 1) {
+      //CANCER ANIMATION
       cancer.play();
     } else if (currentSlide == 2) {
       // LIBRA ANIMATION
       libra.play();
+    } else if (currentSlide == 3) {
+      //PISCES ANIMATION
+      pisces.play();
+    } else if (currentSlide == 4) {
+      //SAG ANIMATION
+      sag.play();
+    } else if (currentSlide == 5) {
+      //AQUA ANIMATION
+      aqua.play();
+    } else if (currentSlide == 6) {
+      // VIRGO ANIMATION
+      virgo.play();
+    } else if (currentSlide == 7) {
+      //LEO ANIMATION
+      leo.play();
+    } else if (currentSlide == 8) {
+      // GEMINI ANIMATION
+      gemini.play();
+    } else if (currentSlide == 9) {
+      // TAURUS ANIMATION
+      taurus.play();
     }
 
  })
@@ -173,15 +197,38 @@ $('.main-container').on('afterChange', function(event, slick, currentSlide){
 $('.main-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){
     // wow.stop();
     // wow.resetAnimation();
-    if (currentSlide == 1) {
-      // CANCER ANIMATION
+    if (currentSlide == 0) {
+      // ARIES ANIMATION
+      aries.stop();
+    } else if (currentSlide == 1) {
+      //CANCER ANIMATION
       cancer.stop();
     } else if (currentSlide == 2) {
       // LIBRA ANIMATION
       libra.stop();
+    } else if (currentSlide == 3) {
+      // LIBRA ANIMATION
+      pisces.stop();
+    } else if (currentSlide == 4) {
+      // SAG ANIMATION
+      sag.stop();
+    } else if (currentSlide == 5) {
+      // AQUA ANIMATION
+      aqua.stop();
+    } else if (currentSlide == 6) {
+      // VIRGO ANIMATION
+      virgo.stop();
+    } else if (currentSlide == 7) {
+      //LEO ANIMATION
+      leo.stop();
+    } else if (currentSlide == 8) {
+      // GEMINI ANIMATION
+      gemini.stop();
+    } else if (currentSlide == 9) {
+      // TAURUS ANIMATION
+      taurus.stop();
     }
-
- })
+})
 
 
 $('.main-container').on('init', function(event, slick){
@@ -194,11 +241,4 @@ $('.main-container').slick();
 
 
 
-
-
-
-
-// const mySiema = new Siema();
-// document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-// document.querySelector('.next').addEventListener('click', () => mySiema.next());
         
