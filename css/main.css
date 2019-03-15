@@ -405,7 +405,7 @@ button.slick-next.slick-arrow {
 }
 
 .about-href {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #EFE4CA; 
     font-weight: 300;
     float: right;
@@ -456,7 +456,7 @@ img.site-icons {
     letter-spacing: 2px;
     font-size: 16px;
     color: #EFE4CA; 
-    font-weight: 500;
+    font-weight: 100;
     margin-top: -1px;
     text-align: center;
 }
