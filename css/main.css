@@ -61,6 +61,12 @@ a {
 
 }
 
+.parital {
+   /* width: 100%;
+    display: inline-block;*/
+    position: relative;
+}
+
 .aries-text {
 	position: absolute;
     z-index: 10;
@@ -115,18 +121,23 @@ p {
 	margin-top: 2px;
 }
 
+/*.main-container {
+   height: 100%;
+   width: 100%; 
+   overflow: hidden;
+}
+
+
+.partial {
+    display: inline-block;
+    height: 100%;
+}*/
+
 /*SLIDER STYLES*/
 
 
-   
-button.glide__arrow.glide__arrow--left.glide__slide--active {
-	width: 40px !important;
-    border-radius: 50%;
-    height: 40px;
-    margin-right: 5px;
-    background: transparent;
-    border: solid 1px #A97043;
-    font-family: 'Lato', sans-serif;
-    color: #EFE4CA;
+button.slick-next.slick-arrow {
+    position: absolute;
+    top: 50px;
+    left: 100px;
 }
-

@@ -26,32 +26,70 @@ load('./partials/leo.html', document.querySelector('#leo-page'));
 load('./partials/gemini.html', document.querySelector('#gemini-page'));
 load('./partials/taurus.html', document.querySelector('#taurus-page'));
 
+var wow = new WOW();
+// $('.main-container').on('afterChange', function(event, slick, currentSlide){
+//     if (currentSlide == 1) {
+//       // CANCER ANIMATION
+//       lottie.loadAnimation({
+//         container: document.getElementById('cancer-animation'), // the dom element that will contain the animation
+//         renderer: 'svg',
+//         loop: true,
+//         autoplay: true,
+//         path: 'assets/cancer.json' // the path to the animation json
+//       });
+//     } else if (currentSlide == 2) {
+//       // LIBRA ANIMATION
+//       lottie.loadAnimation({
+//         container: document.getElementById('libra-animation'), // the dom element that will contain the animation
+//         renderer: 'svg',
+//         loop: true,
+//         autoplay: true,
+//         path: 'assets/libra-animation.json' // the path to the animation json
+//       });
+//     }
+
+//  })
+
+// $('.main-container').on('init', function(event, slick){
+//   console.log('init');
+//   //ARIES ANIMATION
+// lottie.loadAnimation({
+//   container: document.getElementById('circle-animation'), // the dom element that will contain the animation
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: 'assets/aries-season.json' // the path to the animation json
+// });
+//     // console.log('yo bich', $('.main-container').slick('slickCurrentSlide'));
+//  })
+
+// $('.main-container').slick();
 
 
 //ARIES ANIMATION
-lottie.loadAnimation({
+var aries = lottie.loadAnimation({
   container: document.getElementById('circle-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/aries-season.json' // the path to the animation json
 });
 
 // CANCER ANIMATION
-lottie.loadAnimation({
+var cancer = lottie.loadAnimation({
   container: document.getElementById('cancer-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/cancer.json' // the path to the animation json
 });
 
-// LIBRA ANIMATION
-lottie.loadAnimation({
+// LIBRA ANIMATION DIS ONE
+var libra = lottie.loadAnimation({
   container: document.getElementById('libra-animation'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'assets/libra-animation.json' // the path to the animation json
 });
 
@@ -119,8 +157,47 @@ lottie.loadAnimation({
 });
 
 
+$('.main-container').on('afterChange', function(event, slick, currentSlide){
+    // wow = new WOW().init();
+    wow.start();
+    if (currentSlide == 1) {
+      // CANCER ANIMATION
+      cancer.play();
+    } else if (currentSlide == 2) {
+      // LIBRA ANIMATION
+      libra.play();
+    }
 
-new WOW().init();
+ })
+
+$('.main-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    // wow.stop();
+    // wow.resetAnimation();
+    if (currentSlide == 1) {
+      // CANCER ANIMATION
+      cancer.stop();
+    } else if (currentSlide == 2) {
+      // LIBRA ANIMATION
+      libra.stop();
+    }
+
+ })
+
+
+$('.main-container').on('init', function(event, slick){
+    //ARIES ANIMATION
+    aries.play();
+    wow.init();
+ })
+
+$('.main-container').slick();
+
+
+
+
+
+
+
 // const mySiema = new Siema();
 // document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
 // document.querySelector('.next').addEventListener('click', () => mySiema.next());
