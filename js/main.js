@@ -30,15 +30,18 @@ load('./partials/sop.html', document.querySelector('#sop-page'));
 
 
 var initialIndex = 0
-var initialNextName = 'cancer'
+var initialNextName = 'Cancer'
+var initialPrevName = 'Scorpio'
 if(window.location.href.split('#').length > 1) {
-  initialIndex = window.location.href.split('#')[1]
+  initialIndex = parseInt(window.location.href.split('#')[1])
 }
  
 if (initialIndex == 1) {
-  initialNextName = 'Libra'
+  initialNextName = 'Libra';
+  initialPrevName = 'Aries';
 } else if (initialIndex == 2) {
-  initialNextName == 'whatever'
+  initialNextName = 'Pisces';
+  initialPrevName = 'Cancer';
 }
 
 
@@ -155,44 +158,66 @@ var sop = lottie.loadAnimation({
 
 $('.main-container').on('afterChange', function(event, slick, currentSlide){
     var nextArrow = document.querySelector('#nextName');
+    var prevArrow = document.querySelector('#prevName');
     if (currentSlide == 0) {
       // ARIES ANIMATION
       aries.play();
+      prevArrow.innerHTML = 'Scorpio';
     }  else if (currentSlide == 1) {
       //CANCER ANIMATION
       cancer.play();
-      nextArrow.innerHTML = 'libra';
+      nextArrow.innerHTML = 'Libra';
+      prevArrow.innerHTML = 'Aries';
     } else if (currentSlide == 2) {
       // LIBRA ANIMATION
       libra.play();
+      nextArrow.innerHTML = 'Pisces';
+      prevArrow.innerHTML = 'Cancer';
     } else if (currentSlide == 3) {
       //PISCES ANIMATION
       pisces.play();
+      nextArrow.innerHTML = 'Sagittarius';
+      prevArrow.innerHTML = 'Libra';
     } else if (currentSlide == 4) {
       //SAG ANIMATION
       sag.play();
+      nextArrow.innerHTML = 'Aquarius';
+      prevArrow.innerHTML = 'Pisces';
     } else if (currentSlide == 5) {
       //AQUA ANIMATION
       aqua.play();
+      nextArrow.innerHTML = 'Virgo';
+      prevArrow.innerHTML = 'Sagittarius';
     } else if (currentSlide == 6) {
       // VIRGO ANIMATION
       virgo.play();
+      nextArrow.innerHTML = 'Leo';
+      prevArrow.innerHTML = 'Aquarius';
     } else if (currentSlide == 7) {
       //LEO ANIMATION
       leo.play();
+      nextArrow.innerHTML = 'Gemini';
+      prevArrow.innerHTML = 'Virgo';
     } else if (currentSlide == 8) {
       // GEMINI ANIMATION
       gemini.play();
+      nextArrow.innerHTML = 'Taurus';
+      prevArrow.innerHTML = 'Leo';
     } else if (currentSlide == 9) {
       // TAURUS ANIMATION
       taurus.play();
+      nextArrow.innerHTML = 'Capricorn';
+      prevArrow.innerHTML = 'Gemini';
     } else if (currentSlide == 10) {
       // CAP ANIMAITON
       cap.play();
+      nextArrow.innerHTML = 'Scorpio';
+      prevArrow.innerHTML = 'Taurus';
     } else if (currentSlide == 11) {
-      // CAP ANIMAITON
-      console.log(currentSlide);
+      // SOP ANIMAITON
       sop.play();
+      nextArrow.innerHTML = 'Aries';
+      prevArrow.innerHTML = 'Capricorn';
     } 
 
  })
@@ -206,6 +231,7 @@ $('.main-container').on('beforeChange', function(event, slick, currentSlide, nex
     } else if (currentSlide == 1) {
       //CANCER ANIMATION
       cancer.stop();
+
     } else if (currentSlide == 2) {
       // LIBRA ANIMATION
       libra.stop();
@@ -286,8 +312,8 @@ $('.main-container').on('init', function(event, slick){
 
 $('.main-container').slick({
    // dots: true
-  nextArrow: '<div id="next"><i class="fas fa-arrow-right a-right control-c next slick-next"></i><br><span id="nextName">' + initialNextName + '</span></div>',
-  prevArrow: '<i class="fas fa-arrow-left a-left control-c prev slick-prev"></i>',
+  nextArrow: '<div id="next"><i class="fas fa-arrow-right a-right control-c next slick-next"></i><span id="nextName">' + initialNextName + '</span></div>',
+  prevArrow: '<div id="prev"><i class="fas fa-arrow-left a-left control-c prev slick-prev"></i><span id="prevName">' + initialPrevName + '</span></div>',
   initialSlide: initialIndex
 });
 

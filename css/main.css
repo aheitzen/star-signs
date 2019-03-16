@@ -148,8 +148,56 @@ li {
     color: white;
     position: fixed;
     top: calc(50% - 25px);
-    right: 20px;
+    right: 40px;
     float: right;
+    font-size: 1.5em;
+     margin-top: 15px;
+     z-index: 10;
+         display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        color: #EFE4CA;
+}
+
+#prev {
+    background: transparent;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+    position: fixed;
+    top: calc(50% - 25px);
+    left: 40px;
+    z-index: 10;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        color: #EFE4CA;
+
+     /*display: flex;*/
+}
+
+#prevName {
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 2px;
+    font-size: 18px;
+        margin-left: 1em;
+        margin-top: 1em;
+            color: #EFE4CA;
+}
+
+#nextName {
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-right: 1em;
+    
+     margin-top: 14px;
+         color: #EFE4CA;
+
 }
 
 
@@ -183,17 +231,7 @@ button#slick-slide-control01, button#slick-slide-control02, button#slick-slide-c
 }
 */
 
-.slick-prev {
-    background: transparent;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    color: white;
-    position: fixed;
-    top: calc(50% - 25px);
-    left: 20px;
-    z-index: 10;
-}
+
 
 /*button.slick-next.slick-arrow {
     background: transparent;
