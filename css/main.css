@@ -286,20 +286,21 @@ button:focus {
     letter-spacing: 5px;
     margin-right: 0;
     margin-bottom: 25px;
-    margin-top: 0;
+    animation-duration: 3s;
     word-spacing: 1px;
         margin-bottom: -32px;
+            margin-top: -33px;
 }
 
 .intro-h2 {
     font-family: 'Lato', sans-serif;
     color: #A97043; 
     text-align: center;
-    font-size: 1.5em; 
+    font-size: 1.2em; 
     width: 100%;
     letter-spacing: 3px;
     margin-top: 0;
-    font-weight: 400;
+    font-weight: 100;
     margin-bottom: 40px;
         margin-top: 49px;
 }
@@ -313,13 +314,14 @@ button:focus {
     border: #EFE4CA solid 1.4px;
     font-weight: 100;
     font-size: 14px;
+    animation-duration: 2s;
 }
 
-.button-intro:hover {
-    cursor: pointer;
-    background: #EFE4CA;
-    color: #A97043;
-    font-weight: 500;
+.button-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .border-white {
