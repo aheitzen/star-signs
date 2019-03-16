@@ -51,7 +51,7 @@ var aries = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: false,
-  path: 'assets/aries-season.json' // the path to the animation json
+  path: 'assets/aries.json' // the path to the animation json
 });
 
 // CANCER ANIMATION

@@ -90,9 +90,10 @@ a {
     justify-content: center;
     align-content: center;
     font-size: 100px;
-    margin-top: 3.1em;
+    margin-top: 2.9em;
     letter-spacing: 5px;
     margin-bottom: 0;
+    animation-duration: 2s;
 }
 
 #aries-subtitle {
@@ -108,30 +109,25 @@ a {
     align-content: center;
     font-size: 19px;
     letter-spacing: 5px;
-    margin-top: 0;
+    margin-top: 0px;
+    animation-duration: 2s;
+    animation-delay: 6s;
 }
+
+
 
 p {
 	font-family: 'Lato', sans-serif;
 	color: #EFE4CA;
 	display: inline-block;
 	font-weight: 100;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1;	
-	margin-top: 2px;
+	margin-top: 5px;
+    letter-spacing: 2px;
+    animation-delay: 7s;
+    animation-duration: 5s;
 }
-
-/*.main-container {
-   height: 100%;
-   width: 100%; 
-   overflow: hidden;
-}
-
-
-.partial {
-    display: inline-block;
-    height: 100%;
-}*/
 
 /*SLIDER STYLES*/
 
@@ -200,16 +196,6 @@ li {
 
 }
 
-
-
-
-
-
-
-button.slick-next.slick-arrow:before {
-    /*content: "";*/
-}
-
 #text {
     display: none;
 }
@@ -217,31 +203,6 @@ button.slick-next.slick-arrow:before {
 button#slick-slide-control01, button#slick-slide-control02, button#slick-slide-control03, button#slick-slide-control04, button#slick-slide-control05, button#slick-slide-control06, button#slick-slide-control07, button#slick-slide-control08, button#slick-slide-control09, button#slick-slide-control00  {
     visibility: hidden;
 }
-
-/*ul.slick-dots {
-    display: inline-flex;
-    font-size: 3em;
-    color: #EFE4CA;
-    width: 100%;
-    margin: 0 auto;
-        display: flex;
-    justify-content: center;
-    margin-top: -1em;
-    margin-left: 1em;
-}
-*/
-
-
-
-/*button.slick-next.slick-arrow {
-    background: transparent;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    color: #EFE4CA;
-    border: solid 1.4px #EFE4CA;
-
-}*/
 
 button:focus {
     outline: none;
@@ -252,18 +213,9 @@ button:focus {
     cursor: pointer;
 }
 
-
-/*button.slick-next.slick-arrow {
-    background: transparent;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    color: white;
-    position: fixed;
-    left: calc(97% - 20px);
-  
-}*/
-
+.slick-prev:hover {
+    cursor: pointer;
+}
 
 /*INTRO PAGE*/
 
