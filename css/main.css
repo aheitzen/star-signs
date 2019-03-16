@@ -140,7 +140,7 @@ li {
     margin-left: 1.2em;
 }
 
-button.slick-next.slick-arrow {
+#next {
     background: transparent;
     border-radius: 50%;
     height: 50px;
@@ -149,9 +149,10 @@ button.slick-next.slick-arrow {
     position: fixed;
     top: calc(50% - 25px);
     right: 20px;
-    /* left: 10px; */
     float: right;
 }
+
+
 
 
 
@@ -182,7 +183,7 @@ button#slick-slide-control01, button#slick-slide-control02, button#slick-slide-c
 }
 */
 
-button.slick-prev.slick-arrow {
+.slick-prev {
     background: transparent;
     border-radius: 50%;
     height: 50px;
@@ -190,10 +191,11 @@ button.slick-prev.slick-arrow {
     color: white;
     position: fixed;
     top: calc(50% - 25px);
-    left: 10px;
+    left: 20px;
+    z-index: 10;
 }
 
-button.slick-next.slick-arrow {
+/*button.slick-next.slick-arrow {
     background: transparent;
     border-radius: 50%;
     height: 50px;
@@ -201,19 +203,19 @@ button.slick-next.slick-arrow {
     color: #EFE4CA;
     border: solid 1.4px #EFE4CA;
 
-}
+}*/
 
 button:focus {
     outline: none;
     border: #EFE4CA solid 1.4px;
 }
 
-button.slick-next.slick-arrow:hover {
+.slick-next:hover {
     cursor: pointer;
 }
 
 
-button.slick-next.slick-arrow {
+/*button.slick-next.slick-arrow {
     background: transparent;
     border-radius: 50%;
     height: 50px;
@@ -221,9 +223,8 @@ button.slick-next.slick-arrow {
     color: white;
     position: fixed;
     left: calc(97% - 20px);
-    /* left: 10px; */
-    /*float: right;*/
-}
+  
+}*/
 
 
 /*INTRO PAGE*/
