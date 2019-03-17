@@ -203,6 +203,13 @@ $('.main-container').on('afterChange', function(event, slick, currentSlide){
  })
 
 $('.main-container').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+   var animations = document.querySelectorAll('.animated');
+    animations.forEach(function(animation) {
+      animation.classList.remove('animated', 'fadeIn');
+      setTimeout(function() {
+        animation.classList.add('animated', 'fadeIn');
+      }, 10);
+    });
     if (currentSlide == 0) {
       aries.stop();
     } else if (currentSlide == 1) {
