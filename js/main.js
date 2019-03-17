@@ -30,18 +30,18 @@ load('./partials/sop.html', document.querySelector('#sop-page'));
 
 
 var initialIndex = 0
-var initialNextName = 'Cancer'
-var initialPrevName = 'Scorpio'
+var initialNextName = 'Taurus'
+var initialPrevName = 'Pisces'
 if(window.location.href.split('#').length > 1) {
   initialIndex = parseInt(window.location.href.split('#')[1])
 }
  
 if (initialIndex == 1) {
-  initialNextName = 'Libra';
+  initialNextName = 'Gemini';
   initialPrevName = 'Aries';
 } else if (initialIndex == 2) {
-  initialNextName = 'Pisces';
-  initialPrevName = 'Cancer';
+  initialNextName = 'Cancer';
+  initialPrevName = 'Taurus';
 }
 
 
@@ -162,62 +162,61 @@ $('.main-container').on('afterChange', function(event, slick, currentSlide){
     if (currentSlide == 0) {
       // ARIES ANIMATION
       aries.play();
-      prevArrow.innerHTML = 'Scorpio';
+      prevArrow.innerHTML = 'Pisces';
     }  else if (currentSlide == 1) {
       //CANCER ANIMATION
-      cancer.play();
-      nextArrow.innerHTML = 'Libra';
+      taurus.play();
+      nextArrow.innerHTML = 'Gemini';
       prevArrow.innerHTML = 'Aries';
     } else if (currentSlide == 2) {
       // LIBRA ANIMATION
-      libra.play();
-      nextArrow.innerHTML = 'Pisces';
-      prevArrow.innerHTML = 'Cancer';
+      gemini.play();
+      nextArrow.innerHTML = 'Cancer';
+      prevArrow.innerHTML = 'Taurus';
     } else if (currentSlide == 3) {
       //PISCES ANIMATION
-      pisces.play();
-      nextArrow.innerHTML = 'Sagittarius';
-      prevArrow.innerHTML = 'Libra';
+      cancer.play();
+      nextArrow.innerHTML = 'Leo';
+      prevArrow.innerHTML = 'Gemini';
     } else if (currentSlide == 4) {
       //SAG ANIMATION
-      sag.play();
-      nextArrow.innerHTML = 'Aquarius';
-      prevArrow.innerHTML = 'Pisces';
-    } else if (currentSlide == 5) {
-      //AQUA ANIMATION
-      aqua.play();
+      leo.play();
       nextArrow.innerHTML = 'Virgo';
-      prevArrow.innerHTML = 'Sagittarius';
+      prevArrow.innerHTML = 'Cancer';
+    } else if (currentSlide == 5) {
+      virgo.play();
+      nextArrow.innerHTML = 'Libra';
+      prevArrow.innerHTML = 'Leo';
     } else if (currentSlide == 6) {
       // VIRGO ANIMATION
-      virgo.play();
-      nextArrow.innerHTML = 'Leo';
-      prevArrow.innerHTML = 'Aquarius';
+      libra.play();
+      nextArrow.innerHTML = 'Scorpio';
+      prevArrow.innerHTML = 'Virgo';
     } else if (currentSlide == 7) {
       //LEO ANIMATION
-      leo.play();
-      nextArrow.innerHTML = 'Gemini';
-      prevArrow.innerHTML = 'Virgo';
+      sop.play();
+      nextArrow.innerHTML = 'Sagittarius';
+      prevArrow.innerHTML = 'Libra';
     } else if (currentSlide == 8) {
       // GEMINI ANIMATION
-      gemini.play();
-      nextArrow.innerHTML = 'Taurus';
-      prevArrow.innerHTML = 'Leo';
+      sag.play();
+      nextArrow.innerHTML = 'Capricorn';
+      prevArrow.innerHTML = 'Scorpio';
     } else if (currentSlide == 9) {
       // TAURUS ANIMATION
-      taurus.play();
-      nextArrow.innerHTML = 'Capricorn';
-      prevArrow.innerHTML = 'Gemini';
+      cap.play();
+      nextArrow.innerHTML = 'Aquarius';
+      prevArrow.innerHTML = 'Sagittarius';
     } else if (currentSlide == 10) {
       // CAP ANIMAITON
-      cap.play();
-      nextArrow.innerHTML = 'Scorpio';
-      prevArrow.innerHTML = 'Taurus';
+      aqua.play();
+      nextArrow.innerHTML = 'Pisces';
+      prevArrow.innerHTML = 'Capricorn';
     } else if (currentSlide == 11) {
       // SOP ANIMAITON
-      sop.play();
+      pisces.play();
       nextArrow.innerHTML = 'Aries';
-      prevArrow.innerHTML = 'Capricorn';
+      prevArrow.innerHTML = 'Aquarius';
     } 
 
  })
@@ -230,38 +229,38 @@ $('.main-container').on('beforeChange', function(event, slick, currentSlide, nex
       aries.stop();
     } else if (currentSlide == 1) {
       //CANCER ANIMATION
-      cancer.stop();
+      taurus.stop();
 
     } else if (currentSlide == 2) {
       // LIBRA ANIMATION
-      libra.stop();
+      gemini.stop();
     } else if (currentSlide == 3) {
       // LIBRA ANIMATION
-      pisces.stop();
+      cancer.stop();
     } else if (currentSlide == 4) {
       // SAG ANIMATION
-      sag.stop();
+      leo.stop();
     } else if (currentSlide == 5) {
       // AQUA ANIMATION
-      aqua.stop();
+      virgo.stop();
     } else if (currentSlide == 6) {
       // VIRGO ANIMATION
-      virgo.stop();
+      libra.stop();
     } else if (currentSlide == 7) {
       //LEO ANIMATION
-      leo.stop();
+      sop.stop();
     } else if (currentSlide == 8) {
       // GEMINI ANIMATION
-      gemini.stop();
+      sag.stop();
     } else if (currentSlide == 9) {
       // TAURUS ANIMATION
-      taurus.stop();
+      cap.stop();
     } else if (currentSlide == 10) {
       // CAP ANIMATION
-      cap.stop();
+      aqua.stop();
     } else if (currentSlide == 11) {
       // CAP ANIMATION
-      sop.stop();
+      pisces.stop();
     }
 })
 
@@ -276,37 +275,37 @@ $('.main-container').on('init', function(event, slick){
       aries.play();
     }  else if (currentSlide == 1) {
       //CANCER ANIMATION
-      cancer.play();
+      taurus.play();
     } else if (currentSlide == 2) {
       // LIBRA ANIMATION
-      libra.play();
+      gemini.play();
     } else if (currentSlide == 3) {
       //PISCES ANIMATION
-      pisces.play();
+      cancer.play();
     } else if (currentSlide == 4) {
       //SAG ANIMATION
-      sag.play();
+      leo.play();
     } else if (currentSlide == 5) {
       //AQUA ANIMATION
-      aqua.play();
+      virgo.play();
     } else if (currentSlide == 6) {
       // VIRGO ANIMATION
-      virgo.play();
+      libra.play();
     } else if (currentSlide == 7) {
       //LEO ANIMATION
-      leo.play();
+      sop.play();
     } else if (currentSlide == 8) {
       // GEMINI ANIMATION
-      gemini.play();
+      sag.play();
     } else if (currentSlide == 9) {
       // TAURUS ANIMATION
-      taurus.play();
+      cap.play();
     } else if (currentSlide == 10) {
       // CAP ANIMAITON
-      cap.play();
+      aqua.play();
     } else if (currentSlide == 11) {
       // CAP ANIMAITON
-      sop.play();
+      pisces.play();
     } 
  })
 
